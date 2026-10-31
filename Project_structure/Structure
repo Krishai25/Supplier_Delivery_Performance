@@ -1,0 +1,18 @@
+SupplierManagementSystem/
+│
+├── Main.java
+│
+├── model/
+│   ├── Supplier.java
+│   ├── PurchaseOrder.java
+│   ├── Shipment.java
+│   └── CalendarEvent.java
+│
+├── service/
+│   ├── DeliveryEvaluationService.java
+│   ├── OTIFService.java
+│   ├── PenaltyService.java
+│   └── ReportService.java
+│
+└── data/
+    └── SampleData.java

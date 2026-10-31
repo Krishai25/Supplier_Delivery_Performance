@@ -1,0 +1,26 @@
+Purpose: Store supplier details and their contractual SLA (Service Level Agreement) conditions.
+
+The class should contain the following fields:
+1. supplierId – Unique ID of the supplier.
+2. supplierName – Name of the supplier.
+3. monthlyValue – Total monthly contract value.
+4. otifTarget – Minimum required OTIF percentage (e.g., 95%).
+5. gracePeriodDays – Additional grace period allowed (e.g., 2 days).
+6. penaltyRate – Penalty percentage applicable to eligible late orders.
+7. penaltyCapPercentage – Maximum monthly penalty percentage (e.g., 5%).
+2. Required methods
+- Constructor to initialize all supplier details.
+- Getters to access supplier information.
+- Setters to update supplier information if required.
+- toString() to display supplier details.
+3. Service class requirements
+DeliveryEvaluationService.java
+
+No service logic is required inside Supplier.java.
+
+Later, the service class will use the supplier's SLA details to:
+- Retrieve the grace period.
+- Retrieve the OTIF target.
+- Retrieve the penalty rate.
+- Retrieve the monthly penalty cap.
+- Evaluate orders according to the supplier's agreement.
